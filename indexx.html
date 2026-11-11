@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STUDENT STUDY PLANNER</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6ff;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        header {
+            background-color: #6c63ff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            display: inline-block;
+            background-color: #e1ddff;
+            color: #333;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border: 1px solid #b8b2ff;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #e1ddff;
+            color: #333;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid #d5d0ff;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #6c63ff;
+        }
+
+        /* Timetable */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #6c63ff;
+        }
+
+        th, td {
+            border: 1px solid #b8b2ff;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #6c63ff;
+            color: white;
+        }
+
+        tr:nth-child(2) {
+            background-color: #ffe0e6;
+        }
+
+        tr:nth-child(3) {
+            background-color: #fff0c2;
+        }
+
+        tr:nth-child(4) {
+            background-color: #d9f7e5;
+        }
+
+        tr:nth-child(5) {
+            background-color: #dceaff;
+        }
+
+        tr:nth-child(6) {
+            background-color: #f0ddff;
+        }
+
+        /* Assignments */
+        .assignment {
+            padding: 15px;
+            margin: 12px 0;
+            border: 2px solid #ffb3c6;
+            border-radius: 8px;
+        }
+
+        .assignment:nth-child(2) {
+            background-color: #ffe0e6;
+            border-color: #ff9eb5;
+        }
+
+        .assignment:nth-child(3) {
+            background-color: #fff0c2;
+            border-color: #e9c65c;
+        }
+
+        .assignment:nth-child(4) {
+            background-color: #d9f7e5;
+            border-color: #80c99a;
+        }
+
+        .assignment:nth-child(5) {
+            background-color: #b8b2ff;
+            border-color: blueviolet;
+        }
+
+        .assignment p {
+            margin-bottom: 0;
+        }
+
+        /* Subjects */
+        .subject {
+            display: inline-block;
+            padding: 15px;
+            margin: 6px;
+            border: 2px solid #b8b2ff;
+            border-radius: 8px;
+        }
+
+        .subject:nth-child(2) {
+            background-color: #ffdce5;
+            border-color: #ff9eb5;
+        }
+
+        .subject:nth-child(3) {
+            background-color: #ffedbd;
+            border-color: #e9c65c;
+        }
+
+        .subject:nth-child(4) {
+            background-color: #d6f5df;
+            border-color: #80c99a;
+        }
+
+        .subject:nth-child(5) {
+            background-color: #d9e8ff;
+            border-color: #8db8ff;
+        }
+
+        .subject:nth-child(6) {
+            background-color: #eadbff;
+            border-color: #b99ae8;
+        }
+
+        .subject:nth-child(7) {
+            background-color: rgba(128, 128, 128, 0.77);
+            border-color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>STUDENT STUDY PLANNER</h1>
+       
+    </header>
+
+    <nav>
+        <a href="#timetable">Timetable</a>
+        <a href="#assignments">Assignments</a>
+        <a href="#subjects">My Subjects</a>
+    </nav>
+
+    <section id="timetable">
+        <h2>My Timetable</h2>
+
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Time</th>
+            </tr>
+
+            <tr>
+                
+                <td>Engineering drawing</td>
+                <td>9:20 AM - 10:10 AM</td>
+            </tr>
+
+            <tr>
+                
+                <td>Python Programming</td>
+                <td>10:10 AM - 11:00 AM</td>
+            </tr>
+
+            <tr>
+                
+                <td>Python Programming</td>
+                <td>11:00 AM - 11:50 PM</td>
+            </tr>
+
+            <tr>
+                
+                <td>Internet Programming</td>
+                <td>11:50 AM - 12:40 PM</td>
+            </tr>
+
+            <tr>
+                
+                <td>Orientation to Computing</td>
+                <td>1:30 PM - 2:20 PM</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="assignments">
+        <h2>My Assignments</h2>
+
+        <div class="assignment">
+            <input type="checkbox">
+            Mathematics CA-2
+            <p>Due: 18 Nov</p>
+        </div>
+
+        <div class="assignment">
+            <input type="checkbox">
+            Python Programming
+            <p>Due: Wednesday</p>
+        </div>
+
+        <div class="assignment">
+            <input type="checkbox">
+            Internet Programming Project
+            <p>Due: 30 Oct</p>
+        </div>
+
+        <div class="assignment">
+            <input type="checkbox">
+            Design Thinking Project
+            <p>Due: November</p>
+        </div>
+
+    </section>
+
+    <section id="subjects">
+        <h2>My Subjects</h2>
+
+        <div class="subject"><b> Mathematics </b>
+            <p>Matrices, calculus and problem solving.</p>
+        </div>
+
+        <div class="subject"><b>Python Programmming</b>
+            <p>Learn coding, loops and functions.</p>
+        </div>
+
+        <div class="subject"><b>Orientation to computing</b>
+            <p>Explore computer systems and technology.</p>
+        </div>
+
+        <div class="subject"><b>Internet Programming</b>
+            <p>Learn HTML, CSS and website design</p>
+        </div>
+
+        <div class="subject"><b>Design thinking</b>
+            <p>Problem solving through user-centered innovation.</p>
+        </div>
+
+        <div class="subject"><b>Engineering Drawing with autocad</b>
+            <p>Learning standardized form of graphical communication </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Student Study Planner | Internet Programming Project</p>
+    </footer>
+
+</body>
+</html>
